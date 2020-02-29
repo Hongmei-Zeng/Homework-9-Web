@@ -1,0 +1,62 @@
+
+body { margin: 5; }
+
+header {
+    background-color: white;
+}
+
+.container {
+    position: relative;
+    margin: auto;
+}
+
+.columnsContainer {
+    position: relative;
+    margin: auto;
+    background-color: whitesmoke;
+    height: 520px;
+}
+.collapse navbar-collapse {
+    left: auto !important;
+    right: 0px
+}
+
+.row {height: 100%;}
+
+.leftColumn, .rightColumn {
+    padding: 3em;
+    height: 100%;
+}
+
+.col-xs-2 {
+    flex: 50%;
+    padding: 0 4px;
+  }
+  
+.col-xs-2 img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+
+@media screen and (min-width: 47.5em ) {
+    .leftColumn { margin-right: 19.5em; width: 65%; height: 100%;}
+    .rightColumn { position: absolute; top: 0; right: 0; width: 35%; height: 100%;}   
+  }
+
+  @media only screen and (max-width: 600px) {
+    .responsive {
+        width: 100%;
+        height: auto;
+    }
+}
+
+h2 {
+    color: rgb(9, 138, 130);
+    font-size: 24px;
+
+}
+
+h3 {
+    color :rgb(9, 138, 130);
+    font-size: 20px;
+}
