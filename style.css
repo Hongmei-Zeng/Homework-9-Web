@@ -14,7 +14,7 @@ header {
     position: relative;
     margin: auto;
     background-color: whitesmoke;
-    height: 520px;
+    height: auto;
 }
 .collapse navbar-collapse {
     left: auto !important;
@@ -38,9 +38,10 @@ header {
     vertical-align: middle;
   }
 
-@media screen and (min-width: 47.5em ) {
+@media screen and (min-width: 47.5em) {
     .leftColumn { margin-right: 19.5em; width: 65%; height: 100%;}
-    .rightColumn { position: absolute; top: 0; right: 0; width: 35%; height: 100%;}   
+    .rightColumn { position: absolute; top: 0; right: 0; width: 35%; height: 100%;} 
+    .collapse navbar-collapse {width: 100%; height: auto;}  
   }
 
   @media only screen and (max-width: 600px) {
