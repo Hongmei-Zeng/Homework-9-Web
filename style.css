@@ -21,22 +21,22 @@ header {
     right: 0px
 }
 
-.row {height: 100%;}
+.row {
+    height: 100%;
+    width: 100%;
+
+}
 
 .leftColumn, .rightColumn {
     padding: 3em;
     height: 100%;
 }
 
-.col-xs-2 {
-    flex: 50%;
-    padding: 0 4px;
-  }
-  
-.col-xs-2 img {
-    margin-top: 8px;
-    vertical-align: middle;
-  }
+
+.table {
+    border:1px; 
+    width:100%;
+}
 
 @media screen and (min-width: 47.5em) {
     .leftColumn { margin-right: 19.5em; width: 65%; height: 100%;}
@@ -44,11 +44,36 @@ header {
     .collapse navbar-collapse {width: 100%; height: auto;}  
   }
 
-  @media only screen and (max-width: 600px) {
-    .responsive {
-        width: 100%;
-        height: auto;
+@media only screen and (max-width: 320px) {
+    .responsive {width: 100%; height: auto;
     }
+
+.navbar .collapse .navbar-nav li a{
+    color: green !important;
+}
+
+.navbar .navbar-nav .nav-item .nav-link .dropdown-menu .dropdown-item{
+    color: black !important;
+}
+
+.navbar .navbar-nav .nav-item .nav-link .dropdown-menu .dropdown-item:hover{
+    color: black !important;
+    background-color:red;
+    opacity: 0.5;
+}
+
+.navbar .navbar-nav .nav-item .nav-link{
+    color: black !important;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover{
+    color: black !important;
+    background-color:red;
+    opacity: 0.5;
+}
+
+.navbar-toggler{
+    background-color: white;
 }
 
 h2 {
